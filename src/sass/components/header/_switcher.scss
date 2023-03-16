@@ -1,0 +1,128 @@
+.switcher-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+
+    &.mobile {
+      position: fixed;
+      visibility: visible;
+      display: flex;
+      pointer-events: all;
+      visibility: inherit;
+
+      bottom: 24px;
+      left: 16px;
+
+      z-index: 12;
+    }
+  }
+}
+
+.switcher {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px;
+
+  width: 40px;
+  height: 20px;
+
+  border-radius: 20px;
+}
+
+.switcher.is-light {
+  background: var(--white-color);
+  border: 1px solid var(--switcher-color);
+}
+
+.switcher.is-dark {
+  background: var(--switcher-color);
+  border: 1px solid var(--white-color);
+}
+
+.switcher__status {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+
+  top: 1px;
+  left: 1px;
+
+  border-radius: 50%;
+  background-color: var(--switcher-color);
+
+  transition: 400ms;
+}
+
+.switcher__status.is-light {
+  top: 1px;
+  left: 1px;
+
+  background-color: var(--switcher-color);
+}
+
+.switcher__status.is-dark {
+  top: 1px;
+  left: 21px;
+
+  background-color: var(--white-color);
+}
+
+.switcher-icon {
+  stroke: var(--theme-color);
+
+  &--light {
+    margin-right: 8px;
+  }
+
+  &--dark {
+    margin-left: 8px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.switcher-icon--light.is-light {
+  stroke: var(--switcher-color);
+}
+
+.switcher-icon--dark.is-dark {
+  stroke: var(--switcher-color);
+}
+
+.switcher-indicator {
+  @media screen and (max-width: $tablet-max) {
+    display: none;
+  }
+
+  font-size: 18px;
+  line-height: 24px;
+
+  color: var(--theme-color);
+  stroke: var(--theme-color);
+
+  &--light {
+    margin-right: 12px;
+  }
+
+  &--dark {
+    margin-left: 12px;
+  }
+}
+
+.switcher-indicator--light.is-light {
+  color: var(--switcher-color);
+}
+
+.switcher-indicator--dark.is-dark {
+  color: var(--switcher-color);
+}

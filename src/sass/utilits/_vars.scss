@@ -1,0 +1,55 @@
+$primary-font: 'Manrope', sans-serif;
+$secondary-font: 'Poppins', sans-serif;
+$weather-font: 'Roboto', sans-serif;
+
+$transition-duration: 200ms;
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1280px;
+
+$mobile-max: 767.98px;
+$tablet-max: 1279.98px;
+
+:root {
+  --primary-text-color: #111321;
+
+  --primary-bg-color: #f4f4f4;
+  --dark-bg-color: #686868;
+  --footer-bg-color: #7a7a7a;
+
+  --accent-color: #4440f6;
+  --categories-link-color: #4440f7;
+  --switcher-color: #4b48db;
+  --theme-color: #5f6775;
+
+  --header-underline-color: rgba(0, 0, 0, 0.2);
+  --gray-color: #a8a8a8;
+
+  --calendar-accent-color: #4440f6;
+  --calendar-icon-up: #a2a2a2;
+
+  // статические цвета. Не менять!
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --light-color: #f8f8f8;
+  --article-btn-color: #111321;
+  --categories-filter-bnt--bgcolor: #f4f4f4;
+  --news-overlay-color: rgba(244, 244, 244, 0.4);
+  --news-already-read-color: #00dd73;
+  --news-article-category-bg-color: rgba(68, 64, 247, 0.7);
+}
+
+[data-theme='is-dark'] {
+  --primary-text-color: #f4f4f4;
+
+  --primary-bg-color: #2e2e2e;
+  --footer-bg-color: #2e2e2e;
+
+  --calendar-accent-color: #f4f4f4;
+  --calendar-icon-up: #f4f4f4;
+
+  --header-underline-color: rgba(244, 244, 244, 0.2);
+  --categories-filter-bnt-bg-color: #ffffff;
+}

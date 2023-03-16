@@ -1,0 +1,18 @@
+@import './utilits/vars';
+@import './utilits/mixins';
+@import './utilits/common';
+
+@import './base/reset';
+
+@import './components/header/header';
+@import './components/categories-filter';
+@import './components/news';
+@import './components/weather';
+@import './components/pagination';
+@import './components/favorite';
+@import './components/read';
+
+@import './components/footer';
+
+@import './components/not-found';
+@import './components/team';
